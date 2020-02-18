@@ -1,7 +1,6 @@
 <DOCTYPE html>
     <html lang = "en">
 
-
         <head>
     
             <meta charset = "utf-8">
@@ -29,8 +28,9 @@
                         
                         <div>
                             <p>
-                            <label>Gender: <input type = "radio" name = "gender_field" value = "Male"> <label>Male</label>
-                            <label>Gender: <input type = "radio" name = "gender_field" value = "Female"> <label>Female</label>
+                            <label>Gender: </label>
+                            <input type = "radio" name = "gender_field" value = "Male"> <label>Male</label>
+                            <input type = "radio" name = "gender_field" value = "Female"> <label>Female</label>
                             </p>
                         </div>
                         
@@ -56,10 +56,30 @@
                     <legend><strong>My Availability</strong></legend>
                     
                         <div>
-                            <p></p>
+                            <p><label>Days Available: </label></p>
+                                <p><input type = "checkbox" name = "available_field[]" value = "Sunday"> <label>Sunday</label></p>
+                                <p><input type = "checkbox" name = "available_field[]" value = "Monday"> <label>Monday</label></p>
+                                <p><input type = "checkbox" name = "available_field[]" value = "Tuesday"> <label>Tuesday</label></p>
+                                <p><input type = "checkbox" name = "available_field[]" value = "Wednesday"> <label>Wednesday</label></p>
+                                <p><input type = "checkbox" name = "available_field[]" value = "Thursday"> <label>Thursday</label></p>
+                                <p><input type = "checkbox" name = "available_field[]" value = "Friday"> <label>Friday</label></p>
+                                <p><input type = "checkbox" name = "available_field[]" value = "Saturday"> <label>Saturday</label></p>
+                        </div>
+                             
+                        <div>
+                            <p><label>Any Comments? </label></p>
+                            <p><textarea rows = "30" cols = "60" name = "comments_field" placeholder = "Type here!"> </textarea></p>
+                            
+                            <input type = "hidden" name = "hidden_field" value = "The Office, Season 2 episode 4, @18:41"
+                        </div>
+                        
                 </fieldset/>
+                
+                <div>
                 <p><input type = "reset" value = "Reset Form"></p>
                 <p><input type = "submit" value = "Submit"></p>
+                </div>
+                
             </form>
         </body>
     </html>
